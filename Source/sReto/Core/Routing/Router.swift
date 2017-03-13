@@ -371,7 +371,7 @@ class Router {
                     connection: connection,
                     onPacket: {
                         if let _ = RoutedConnectionEstablishedConfirmationPacket.deserialize($0) {
-                            self.delegate?.handleConnection(self, node: self.provideNode(sourcePeerIdentifier, nodeName: nil), connection: connection)
+                            self.delegate?.handleConnection(self, node: self.provideNode(sourcePeerIdentifier, nodeName: self.name), connection: connection)
                         }
                     },
                     onFail: {
