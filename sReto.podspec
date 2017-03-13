@@ -21,31 +21,31 @@ Pod::Spec.new do |s|
 
   s.subspec 'Bonjour' do |b|
   	b.source_files     = 'Source/sReto/Modules/Bonjour/**/*.swift'
-  	b.dependency         'sReto/Core'
+  	b.dependency         'sReto-imonggo/Core'
   	b.dependency         'CocoaAsyncSocket', '7.5.1'
   end
   
   s.subspec 'WlanModule' do |wm|
   	wm.source_files    = 'Source/sReto/Modules/WlanModule/*.swift'
-  	wm.dependency        'sReto/Bonjour'
+  	wm.dependency        'sReto-imonggo/Bonjour'
   end
   
   s.subspec 'BluetoothModule' do |bm|
   	bm.source_files    = 'Source/sReto/Modules/BluetoothModule/*.swift'
-  	bm.dependency        'sReto/Bonjour'
-  	bm.dependency        'sReto/no-arc'
+  	bm.dependency        'sReto-imonggo/Bonjour'
+  	bm.dependency        'sReto-imonggo/no-arc'
   end
   
   s.subspec 'RemoteModule' do |rm|
     rm.source_files    = 'Source/sReto/Modules/RemoteModule/**/*.swift'
-  	rm.dependency        'sReto/Core'
+  	rm.dependency        'sReto-imonggo/Core'
     rm.dependency        'SocketRocket', '0.4.2'
   end
   
   s.subspec 'AllModules' do |am|
-    am.dependency        'sReto/RemoteModule'
-    am.dependency        'sReto/WlanModule'
-    am.dependency        'sReto/BluetoothModule'
+    am.dependency        'sReto-imonggo/RemoteModule'
+    am.dependency        'sReto-imonggo/WlanModule'
+    am.dependency        'sReto-imonggo/BluetoothModule'
   end
   
   s.subspec 'no-arc' do |n|
