@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.9'
 
-  s.source             = { :git => 'https://github.com/ls1intum/sReto-imonggo.git', :tag => s.version }
+  s.source             = { :git => 'https://github.com/allanmacatingrao/sReto-imonggo.git', :tag => s.version }
 
   s.default_subspec    = 'WlanModule'
   
